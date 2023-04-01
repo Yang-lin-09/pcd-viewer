@@ -29,3 +29,5 @@ IF( APPLE )
 ENDIF( APPLE )
 
 target_link_libraries( PCD_Viewer ${PCL_LIBRARIES} ${OPENGL_LIBRARY} glfw ${EXTRA_LIBS} )
+
+install(TARGETS PCD_Viewer RUNTIME DESTINATION /usr/bin)
