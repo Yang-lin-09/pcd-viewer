@@ -7,7 +7,7 @@ find_package( OpenGL REQUIRED )
 find_package( PCL 1.7 REQUIRED )
 
 include( CheckCXXCompilerFlag )
-set( CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wall -std=c++11" )
+set( CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wall -std=c++14" )
 set( CMAKE_EXPORT_COMPILE_COMMANDS ON )
 
 include_directories( ${PCL_INCLUDE_DIRS} ${OPENGL_INCLUDE_DIRS} /user/local/include )
